@@ -1,2 +1,2 @@
-# AutomateBoringStuff
-Exercises from Automate the Boring Stuff by Al Sweigart 
+# Python3
+Simple python coding exercises.
