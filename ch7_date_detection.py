@@ -1,11 +1,8 @@
-#! ch_7_date_detection.py
-
 import regex as re
 import sys
 regexobject = re.compile(r'([0-2]?[0-9]|31|30)/([0]?[0-9]|[1][0-2])/([1-2][0-9][0-9][0-9])')
 
-print("Input a date")
-date = input()
+date = '29/2/2020'
 
 mo = regexobject.findall(date)
 if len(mo):
@@ -29,9 +26,11 @@ elif (month == 2) and ((date <= 28) or ((date <= 29) and (leap_year(year)))):
 elif (month not in (months_with30 + [2])) and (date <= 31):
 	print("valid date4")
 else:
-	print("Invalid date")
+	print("invalid date")
 
 
+
+print(date, month, year)
 
 
 
